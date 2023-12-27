@@ -25,6 +25,10 @@ public extension Date {
         return self.toString(format: "dd MMM, yyyy")
     }
     
+    var ddMMMyyyyHHmm : String {
+        return self.toString(format: "dd MMM, yyyy  HH:mm")
+    }
+    
     var dayString: String {
         let calendar = Calendar.current.component(.weekday, from: self)
         return daysOfWeek[calendar - 1]
