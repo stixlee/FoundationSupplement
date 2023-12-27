@@ -22,7 +22,7 @@ public extension Date {
     }
     
     var ddMMMyyyy : String {
-        return self.toString(format: "dd-MMM-yyyy")
+        return self.toString(format: "dd MMM yyyy")
     }
     
     var dayString: String {
